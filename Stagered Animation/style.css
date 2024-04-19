@@ -1,0 +1,46 @@
+body{
+    background-color: #131316;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 120vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5);
+    transform: translateX(-100%);
+    transition: 1.3s all;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-right:5px ;
+    border-radius: 5px;
+}
+.logo:nth-child(2){
+    transition-delay:200ms ;
+}
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
